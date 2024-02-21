@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #DFDFDF;
+    }
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-column, .middle-column, .right-column {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+    .left-column {
+        width: 30%;
+        color: #17406E;
+        padding: 20px;
+    }
+    .logo{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    
+
+    } 
+    .profile {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 48px;
+}
+    .navigation-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 16px;
+    text-align: left;
+    border-radius: 19px;
+    width: 246px;
+    height: 53px;
+    padding-left: 20px;
+}
+
+.default {
+    background: #17406E;
+    color: white;
+}
+
+.clicked {
+
+    color: #17406E;
+}
+ 
+
+    .middle-column {
+        width: 40%;
+        padding: 20px;
+    }
+    .dashboard-box {
+    background: #FFFFFF;
+    border-radius: 53px;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+}
+    .dashboard-heading {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #17406E;
+    }
+    .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    text-align: center;
+    margin: 0 30px;  
+}
+
+.icon-container img {
+   
+    height: auto;
+    margin-bottom: 10px;  
+}
+
+
+.blue-box {
+    background: #17406E;
+    border-radius: 53px;
+    padding: 45px;
+    color: white;
+    overflow: hidden; 
+    margin-top: 70px; 
+}
+
+.white-text-box {
+    background: white;
+    padding: 10px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 43px;
+}
+
+.text-container,
+.number-container {
+    color: #17406E;
+    margin: 0; 
+}
+
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.job {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.job p {
+    margin: 0;
+}
+
+.job-number {
+    color: white;
+}
+.text-container h3 {
+    margin-bottom: 0;  
+    margin-top: 0;
+}
+
+.right-column {
+    width: 30%;
+    padding: 20px;
+    text-align: right;  
+    color: #17406E;
+}
+
+.navigation-btn1 {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 16px;
+    text-align: right;  
+    border-radius: 19px;
+    width: 200px;
+    height: 53px;
+    padding-left: 20px;
+    padding-right: 10px;
+    justify-content: flex-end;  
+}
+@media only screen and (min-width: 768px) {
+    .left-column, .right-column {
+        width: 30%;
+        max-width: none;
+    }
+    .middle-column {
+        width: calc(40% - 40px);
+    }
+    .navigation-btn, .navigation-btn1 {
+        width: 246px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <h2 class="heading">Indra Management <br>& Consultancy <br>(Pvt) Ltd.</h2>
+            <div class="navigation">
+                <a href="#" class="navigation-btn default" id="dashboardLink">Dashboard</a>
+                <a href="#" class="navigation-btn clicked" id="dashboardLink">Candidates</a>
+                <a href="#" class="navigation-btn clicked" id="dashboardLink">Messages</a>
+                <a href="#" class="navigation-btn clicked" id="dashboardLink">Resumes</a>
+                
+            </div>
+        </div>
+        <div class="middle-column">
+            <div class="dashboard-box">
+                <h2 class="dashboard-heading">Dashboard</h2>
+                <div class="icons">
+                    <div class="icon-container">
+                        <img src="images/img1.png">
+                        <p style="color: #17406E;">124.2k<br>Applies</p>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/img2.png">
+                        <p style="color: #17406E;">114.2k<br>Jobs</p>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/img3.png">
+                        <p style="color: #17406E;">98.3k<br>Candidates</p>
+                    </div>
+                </div>
+                
+                <div class="blue-box">
+                    <div class="text-box">
+                        <div class="white-text-box">
+                            <div class="text-container">
+                                <h3>Applications</h3>
+                                <p style="margin-top: 0%;">Upto 1-02-24</p>
+                            </div>
+                            <div class="number-container">
+                                <p>124.2k</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-list">
+                        <div class="job">
+                            <p>Drivers</p>
+                            <p class="job-number">35k</p>
+                        </div>
+                        <div class="job">
+                            <p>Software Developers</p>
+                            <p class="job-number">25k</p>
+                        </div>
+                        <div class="job">
+                            <p>Operation Executive</p>
+                            <p class="job-number">20k</p>
+                        </div>
+                        <div class="job">
+                            <p>Asst. Managers</p>
+                            <p class="job-number">10k</p>
+                        </div>
+                        <div class="job">
+                            <p>Senior Graphic Designers</p>
+                            <p class="job-number">10k</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+        <div class="right-column">
+            <img class="profile" src="images/profile.png" alt="profile">
+            <h2 class="heading">Sewmi <br>Harindi <br></h2>
+            <div class="navigation">
+                <a href="#" class="navigation-btn1 clicked" id="dashboardLink">Profile</a>
+                <a href="#" class="navigation-btn1 clicked" id="dashboardLink">Signout</a>
+                <a href="#" class="navigation-btn1 default" id="dashboardLink">Job Seeker</a>
+                <a href="#" class="navigation-btn1 clicked" id="dashboardLink">Employer</a>
+                
+            </div>
+            <img src="images/dashboard1.png">
+        </div>
+    </div>
+    <script>document.getElementById('dashboardLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    this.classList.toggle('clicked');
+    this.classList.toggle('default');
+});
+
+    </script>
+</body>
+</html>
