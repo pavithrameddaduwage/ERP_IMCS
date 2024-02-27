@@ -1,71 +1,85 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #DFDFDF;
+    background-color: #F4F4EF;
+}
+
+h2 {
+    color: #17406E;
+    font-size: 26px;
+}
+p{
+    color: #17406E;
+
 }
 .container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .left-column, .middle-column, .right-column {
-width: 100%;
-padding: 20px;
-box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 .left-column {
     width: 30%;
     color: #17406E;
     padding: 20px;
 }
-.logo{
-width: 100%;
-max-width: 100px;
-height: auto;
-margin-bottom: 20px;
 
+.logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 
-} 
 .profile {
-width: 100%;
-max-width: 100px;
-height: auto;
-margin-bottom: 20px;
-border-radius: 48px;
-}
-.navigation-btn {
-display: inline-flex;
-align-items: center;
-text-decoration: none; 
-font-size: 16px;
-text-align: left;
-border-radius: 19px;
-width: 246px;
-height: 53px;
-padding-left: 20px;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 48px;
+    margin-top: 20px;
 }
 
-.default {
-background: #17406E;
-color: white;
+.navigation-btn, .default-button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 19px;
+    width: 246px;
+    height: 53px;
+    padding-left: 20px;
+}
+
+.default-button {
+    background: #17406E;
+    color: white;
+    display: block;
+    border-color: transparent;
 }
 
 .clicked {
-
-color: #17406E;
+    color: #17406E;
 }
-
 
 .middle-column {
     width: 40%;
     padding: 20px;
 }
+
 .dashboard-box {
-background: #FFFFFF;
-border-radius: 53px;
-/* padding: 20px; */
-margin-bottom: 20px;
+    background: #FFFFFF;
+    border-radius: 53px;
+    margin-bottom: 20px;
 }
+
 .dashboard-heading {
     font-size: 16px;
     font-weight: 700;
@@ -75,104 +89,175 @@ margin-bottom: 20px;
     margin-bottom: 20px;
     color: #17406E;
 }
+
 .icons {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .icon-container {
-text-align: center;
-margin: 0 30px;  
+    text-align: center;
+    margin: 0 30px;  
 }
 
 .icon-container img {
-
-height: auto;
-margin-bottom: 10px;  
+    height: auto;
+    margin-bottom: 10px;  
 }
 
-
 .blue-box {
-background: #17406E;
-border-radius: 53px;
-padding: 45px;
-color: white;
-overflow: hidden; 
-margin-top: 70px; 
+    background: #17406E;
+    border-radius: 53px;
+    padding: 45px;
+    color: white;
+    overflow: hidden; 
+    margin-top: 70px; 
 }
 
 .white-text-box {
-background: white;
-padding: 10px;
-border-radius: 22px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 10px;
-height: 43px;
+    background: white;
+    padding: 10px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 43px;
 }
 
-.text-container,
-.number-container {
-color: #17406E;
-margin: 0; 
+.text-container, .number-container {
+    color: #17406E;
+    margin: 0; 
 }
-
 
 .job-list {
-display: flex;
-flex-direction: column;
-margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 .job {
-display: flex;
-justify-content: space-between;
-margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
 }
 
 .job p {
-margin: 0;
+    margin: 0;
 }
 
 .job-number {
-color: white;
+    color: white;
 }
+
 .text-container h3 {
-margin-bottom: 0;  
-margin-top: 0;
+    margin-bottom: 0;  
+    margin-top: 0;
 }
 
 .right-column {
-width: 30%;
-padding: 20px;
-text-align: right;  
-color: #17406E;
+    width: 30%;
+    padding: 20px;
+    text-align: right;  
+    color: #17406E;
 }
 
 .navigation-btn1 {
-display: inline-flex;
-align-items: center;
-text-decoration: none; 
-font-size: 16px;
-text-align: right;  
-border-radius: 19px;
-width: 200px;
-height: 53px;
-padding-left: 20px;
-padding-right: 10px;
-justify-content: flex-end;  
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 16px;
+    text-align: right;  
+    border-radius: 19px;
+    width: 200px;
+    height: 53px;
+    padding-left: 20px;
+    padding-right: 10px;
+    justify-content: flex-end;  
 }
+
 @media only screen and (min-width: 768px) {
-.left-column, .right-column {
-    width: 30%;
-    max-width: none;
+    .left-column, .right-column {
+        width: 30%;
+        max-width: none;
+    }
+    .middle-column {
+        width: calc(40% - 40px);
+    }
+    .navigation-btn, .navigation-btn1 {
+        width: 246px;
+    }
 }
-.middle-column {
-    width: calc(40% - 40px);
+
+.default-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navigation-btn, .navigation-btn1 {
+
+.default-title {
+    margin-bottom: 20px;
+}
+.form-feilds{
+    margin-bottom: 30px;
+}
+.input-field {
+    background-color: transparent;
+    border-color: #1E1E1E;
+    border-radius: 10px;
+    width: 460px;
+    height: 53px;
+    margin-bottom: 20px;  
+    padding-left: 15px;  
+    text-align: center;  
+}
+
+select.input-field {
+    width: 480px;  
+    border-color: #1E1E1E;
+}
+
+.create-account-link {
+    color: #17406E; 
+    margin-top: 30px;  
+    display: block; 
+}
+
+.input-text {
+    background-color: transparent;
+    border-color: #1E1E1E;
+    border-radius: 10px;
+    width: 460px;
+    height: 53px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    display: block;  
+}
+.text-box {
+    text-align: center;  
+    font-size: 16px;
+    border-radius: 19px;
     width: 246px;
+    height: 53px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    background: #17406E;
+    color: white;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 10px; 
+    margin-bottom: 10px;  
 }
+textarea.input-field {
+    height: 120px; 
 }
+
+.inline-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
