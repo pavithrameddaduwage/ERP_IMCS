@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+    <div class="default-container">  
+        <div class="login">
+            <div class="login-form">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="circular-image-container">  
+                        <label for="profile_image_input">
+                            <img class="upload-image" src="images/photoUpload.png" alt="Logo">
+                            <p class="upload-text">Profile Picture</p>
+                        </label>
+                        <input id="profile_image_input" type="file" name="profile_image" class="input-field circular-image" accept="image/*" required><br>
+                    </div>
+                    
+                    <div class="form-feilds" style="text-align: center;">
+                        <input type="text" name="companyname" class="input-field" placeholder="Full name / Company name" required><br>
+                        <input type="text" name="CompanyDescription" class="input-field" style="height:200px" placeholder="Company Description" required><br>
+                        <input type="text" name="Address" class="input-field" placeholder="Address" required><br>
+                        <div class="centered-input-row" style="display: flex; justify-content: center; margin-bottom: 10px;">
+                            <input type="text" name="contact" class="input-field" style="width: calc(50% - 5px);" placeholder="Contact Number" required>
+                            <input type="text" name="bussiness" class="input-field" style="width: calc(50% - 5px); " placeholder="Business Registration" required>
+                        </div>
+                    </div>
+                    
+                    <center>
+                        <input type="submit" value="Create a company profile" class="default-button login-button">
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
