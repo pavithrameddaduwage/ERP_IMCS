@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <h2 class="heading">Indra Management <br>& Consultancy <br>(Pvt) Ltd.</h2>
+            <div class="navigation">
+                <a href="#" class="navigation-btn default" id="dashboardLink">Dashboard</a>
+                <a href="#" class="navigation-btn clicked" id="dashboardLink">Candidates</a>
+                <a href="#" class="navigation-btn clicked" id="dashboardLink">Messages</a>
+                <a href="#" class="navigation-btn clicked" id="dashboardLink">Resumes</a>
+                
+            </div>
+        </div>
+        <div class="middle-column">
+            <div class="dashboard-box-inner">
+                <h2 class="dashboard-heading">Employers</h2>
+                 
+                
+                <div class="blue-box-employee">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Koombiyo (Pvt) Ltd</p>
+                        <p class="company-date">21-02-24</p>
+                    </div>
+                    <a href="your_other_page.html" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <br>
+                <div class="blue-box-employee">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Koombiyo (Pvt) Ltd</p>
+                        <p class="company-date">21-02-24</p>
+                    </div>
+                    <a href="your_other_page.html" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <br>
+                <div class="blue-box-employee">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Koombiyo (Pvt) Ltd</p>
+                        <p class="company-date">21-02-24</p>
+                    </div>
+                    <a href="your_other_page.html" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <br>
+                <div class="blue-box-employee">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Koombiyo (Pvt) Ltd</p>
+                        <p class="company-date">21-02-24</p>
+                    </div>
+                    <a href="your_other_page.html" class="arrow-link"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <br>
+                
+                 
+                <center>
+                    <a href="#" class="create-account-link">Register a new employer</a>
+                </center>
+                
+            </div> 
+        </div>
+        <div class="right-column">
+            <img class="profile" src="images/profile.png" alt="profile">
+            <h2 class="heading">Sewmi <br>Harindi <br></h2>
+            <div class="navigation">
+                <a href="#" class="navigation-btn1 clicked" id="dashboardLink">Profile</a>
+                <a href="#" class="navigation-btn1 clicked" id="dashboardLink">Signout</a>
+                <a href="#" class="navigation-btn1 clicked" id="dashboardLink">Job Seeker</a>
+                <a href="#" class="navigation-btn1 default" id="dashboardLink">Employer</a>
+                
+            </div>
+            <img src="images/dashboard1.png" style=" padding-top: 20px; ">
+        </div>
+    </div>
+    <script>document.getElementById('dashboardLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    this.classList.toggle('clicked');
+    this.classList.toggle('default');
+});
+
+    </script>
+</body>
+</html>
