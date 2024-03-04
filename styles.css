@@ -348,14 +348,14 @@ textarea.input-field {
     color: lightblue;  
 }
 .logo-container {
-    width: 60px; /* Adjust size of the circle */
-    height: 60px; /* Adjust size of the circle */
+    width: 60px;  
+    height: 60px;  
     background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px; /* Adjust margin as needed */
+    margin-right: 15px;  
 }
 
 
